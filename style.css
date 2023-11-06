@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --brightYellow: hsl(71, 73%, 54%);
+  --lightGray: hsl(204, 43%, 93%);
+  --grayishBlue: hsl(218, 22%, 67%);
+  --karla: "Karla", sans-serif;
+}
+body {
+  min-height: 100vh;
+  padding: 30px;
+  font-family: var(--karla);
+  background-color: var(--lightGray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  width: 600px;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 2px 6px 102px -61px rgba(0, 0, 0, 0.55);
+}
+.join {
+  background-color: #ffffff;
+  border-radius: 8px 8px 0 0;
+  padding: 32px;
+}
+.join h2 {
+  color: var(--cyan);
+}
+.join h3 {
+  font-size: 16px;
+  color: var(--brightYellow);
+  margin: 20px 0 10px;
+}
+.join p {
+  color: var(--grayishBlue);
+  line-height: 20px;
+}
+.flex-content {
+  display: flex;
+}
+.monthly {
+  width: 50%;
+  padding: 32px;
+  background-color: var(--cyan);
+  border-radius: 0 0 0 8px;
+}
+.monthly h3 {
+  font-size: 16px;
+  color: #fff;
+}
+.monthly h1 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #fff;
+  margin: 16px 0 8px;
+}
+.monthly h1 span {
+  font-size: 12px;
+  color: var(--lightGray);
+  font-weight: 200;
+}
+.monthly p {
+  color: #fff;
+  font-size: 15px;
+}
+.monthly a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: var(--brightYellow);
+  padding: 10px 0;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 24px;
+  box-shadow: 2px 6px 102px -61px rgba(0, 0, 0, 0.55);
+}
+
+.why-us {
+  width: 50%;
+  background-color: hsla(179, 62%, 43%, 0.856);
+  padding: 32px;
+  border-radius: 0 0 8px 0;
+}
+.why-us h3 {
+  font-size: 16px;
+  color: #fff;
+}
+.why-us ul {
+  list-style: none;
+  margin-top: 16px;
+  display: grid;
+  gap: 6px;
+}
+.why-us ul li {
+  font-size: 12px;
+  color: var(--lightGray);
+}
+
+@media screen and (max-width: 500px) {
+  .join,
+  .monthly,
+  .why-us {
+    padding: 18px;
+  }
+  .join h2 {
+    font-size: 16px;
+  }
+  .join h3,
+  .join p,
+  .why-us h3 {
+    font-size: 14px;
+  }
+  .join h3 {
+    margin: 16px 0 10px;
+  }
+  .flex-content {
+    flex-direction: column;
+  }
+  .monthly,
+  .why-us {
+    width: 100%;
+  }
+  .monthly {
+    border-radius: 0;
+  }
+  .monthly h1 {
+    gap: 8px;
+  }
+  .monthly p {
+    font-size: 14px;
+  }
+  .monthly a {
+    font-size: 14px;
+  }
+  .why-us {
+    border-radius: 0 0 8px 8px;
+  }
+  .why-us ul li {
+    font-size: 10px;
+  }
+}
